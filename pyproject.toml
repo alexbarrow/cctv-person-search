@@ -1,0 +1,13 @@
+[project]
+name = "cctv-person-search"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "av>=18.0.0",
+    "dotenv>=0.9.9",
+    "flask>=3.1.3",
+    "opencv-python>=5.0.0.93",
+    "python-dvr>=0.0.1",
+]
