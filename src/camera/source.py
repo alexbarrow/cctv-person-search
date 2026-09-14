@@ -1,0 +1,9 @@
+from typing import Protocol
+
+
+class FrameSource(Protocol):
+    """Single worker owns open/read/close. Output: JPEG bytes or BGR array."""
+
+    def open(self) -> None: ...
+    def read(self) -> object: ...
+    def close(self) -> None: ...

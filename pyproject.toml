@@ -11,3 +11,13 @@ dependencies = [
     "opencv-python>=5.0.0.93",
     "python-dvr>=0.0.1",
 ]
+
+[project.optional-dependencies]
+ml = ["ultralytics>=8.3,<9", "torch>=2.6"]
+
+[dependency-groups]
+dev = ["pytest>=8", "ruff>=0.11"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
